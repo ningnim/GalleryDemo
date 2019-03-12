@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/vid_picker_pop_bg"
+              android:orientation="vertical"
+              tools:layout_width="240dp">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/vivashow_picker_pop_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.5dp"
+        android:text="Videos"
+        android:textColor="#2A3B5A"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vid_picker_pop_bg2"/>
+
+
+</LinearLayout>

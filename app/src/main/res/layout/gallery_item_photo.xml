@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vivalab.library.gallery.view.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:layout_height="90dp"
+    tools:layout_width="90dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#1a1a1a"
+        android:scaleType="centerCrop" />
+    <FrameLayout
+        android:id="@+id/fl_select_bg"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:background="#ccf98900"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gallery_unselect"
+        android:gravity="center"
+        android:textColor="#fff98900"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        tools:text="1"
+        tools:visibility="visible" />
+
+
+
+</com.vivalab.library.gallery.view.SquareRelativeLayout>

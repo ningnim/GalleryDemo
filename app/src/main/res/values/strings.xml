@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GalleryDemo</string>
+    <string name="select_photo_nums">Choose %1$d photos</string>
+
+</resources>

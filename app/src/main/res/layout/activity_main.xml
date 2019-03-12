@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/choose_photo"
+        android:layout_marginTop="200dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="#f98900"
+        android:text="照片多选"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/choose_video"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="视频单选"
+        android:background="#f98900"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
