@@ -28,6 +28,7 @@ public class VideoActivity extends AppCompatActivity {
 
         videoFragment = VidSimpleGalleryFragment.newInstance(
                 FilePickerConst.MediaType.Video,
+                "",
                 new VidSimpleGalleryFragment.Listener() {
                     @Override
                     public void onDataGet(List<PhotoDirectory> dirs) {
@@ -47,12 +48,8 @@ public class VideoActivity extends AppCompatActivity {
         videoFragment.setAdapter(myVideoGalleryAdapter);
 
 
-        //这里是指定请求的路径
-        String mFilePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/Camera/";
         videoFragment.setSpanCount(2);
-        videoFragment.setNeedLoadAll(false);
-        videoFragment.setFilePath(mFilePath);
-        videoFragment.setDirectoryName("DCIM--Camera");
+        videoFragment.setNeedLoadAll(true);
 
         FragmentManager fragmentManager = this.getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();

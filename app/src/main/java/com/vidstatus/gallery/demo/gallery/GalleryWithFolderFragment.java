@@ -89,6 +89,7 @@ public class GalleryWithFolderFragment extends Fragment {
             photoFragment = VidMultiGalleryFragment.newInstance(
                     mSelectMax,
                     FilePickerConst.MediaType.Image,
+                    "",
                     new VidMultiGalleryFragment.Listener() {
                         @Override
                         public void onDataGet(List<PhotoDirectory> dirs) {
@@ -159,6 +160,7 @@ public class GalleryWithFolderFragment extends Fragment {
         } else {
             photoFragment = VidSimpleGalleryFragment.newInstance(
                     FilePickerConst.MediaType.Image,
+                    "",
                     new VidSimpleGalleryFragment.Listener() {
                         @Override
                         public void onDataGet(List<PhotoDirectory> dirs) {
